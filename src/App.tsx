@@ -9,6 +9,9 @@ const user = {
 };
 
 export default function App() {
+  const onClickFetchUser = () => {
+    axsios.get("https://jsonplaceholder.typicode.com/users");
+  };
   return (
     <div className="App">
       <button onclick={onClickFetchUser}>データ取得</button>
